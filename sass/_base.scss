@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 93.75%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 75%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 93.75%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $very-dark-blue;
+  background-color: $very-light-gray;
+  line-height: 1.4;
+  padding: 1.5rem 3rem;
+}

@@ -1,0 +1,61 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba($grayish-blue, 0.5);
+  border-radius: 0.5rem;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+  padding: 2.5rem;
+  display: grid;
+  row-gap: 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 1rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__text {
+    color: $grayish-blue;
+    margin-bottom: 1.5rem;
+  }
+
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-self: end;
+  }
+}
+
+.supervisor {
+  border-top-color: $cyan;
+  grid-row: 2 / span 2;
+  grid-column: 1 / 2;
+}
+
+.builder {
+  border-top-color: $red;
+  grid-row: 1 / span 2;
+  grid-column: 2 / 3;
+}
+
+.karma {
+  border-top-color: $orange;
+  grid-row: 3 / span 2;
+  grid-column: 2 / 3;
+}
+
+.calculator {
+  border-top-color: $blue;
+  grid-row: 2 / span 2;
+  grid-column: -2 / -1;
+}

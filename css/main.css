@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 93.75%;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #4c4e61;
+  background-color: #fafafa;
+  line-height: 1.4;
+  padding: 1.5rem 3rem;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (min-content)[4];
+      grid-template-rows: repeat(4, -webkit-min-content);
+      grid-template-rows: repeat(4, min-content);
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .cards {
+    display: block;
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(163, 165, 174, 0.5);
+          box-shadow: 0 0.5rem 1rem rgba(163, 165, 174, 0.5);
+  border-radius: 0.5rem;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+  padding: 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .card {
+    margin-bottom: 1rem;
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+.card__text {
+  color: #a3a5ae;
+  margin-bottom: 1.5rem;
+}
+
+.card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.supervisor {
+  border-top-color: #45d3d3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.builder {
+  border-top-color: #ea5353;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.karma {
+  border-top-color: #fcaf4a;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / span 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.calculator {
+  border-top-color: #549ef2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  grid-column: -2 / -1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .header {
+    font-size: 0.78rem;
+  }
+}
+
+.header__heading {
+  line-height: 1;
+  font-weight: 200;
+}
+
+.header__heading--bold {
+  font-weight: 600;
+}
+
+.header__paragraph {
+  color: #a3a5ae;
+  margin-top: 0.5rem;
+  width: 40%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header__paragraph {
+    width: 80%;
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
